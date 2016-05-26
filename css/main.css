@@ -1,0 +1,45 @@
+.container {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+
+.itemList {
+	margin: 0 auto;
+	width: 20rem;
+	text-align: center;
+}
+
+.itemList li {
+	text-align:left;
+}
+
+h1 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+}
+
+ul {
+	display: block;
+}
+
+.currentItem {
+	text-align:left;
+	font-size: 2em;
+
+}
+
+li {
+	list-style:none;
+}
+
+
+.strike {
+	text-decoration: line-through;
+}
+
+.delete .checked {
+	margin-left: 1rem;
+	margin-top: 3px;
+}
+
+
