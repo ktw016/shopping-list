@@ -33,13 +33,32 @@ li {
 }
 
 
-.strike {
+/*.strike {
 	text-decoration: line-through;
 }
 
-.delete .checked {
+.delete {
 	margin-left: 1rem;
 	margin-top: 3px;
 }
 
+.Checked {
+	height: 17px;
+	width: 17px;
+	background-image: url(images/box_Sprite.png);
+}*/
 
+
+input[type='checkbox'] + label {
+	background-image: url(images/box_Sprite.png);
+	width: 17px;
+	height: 17px;
+}
+
+input[type='checkbox']:checked + label {
+	color: yellow;
+}
+
+input[type='checkbox'] {
+	display: none;
+}
