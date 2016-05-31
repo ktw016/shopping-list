@@ -30,6 +30,7 @@ ul {
 
 li {
 	list-style:none;
+	cursor: pointer;
 }
 
 
@@ -48,15 +49,26 @@ li {
 	background-image: url(images/box_Sprite.png);
 }*/
 
+span {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
 
 input[type='checkbox'] + label {
-	background-image: url(images/box_Sprite.png);
+	background-image: url("../images/box_Sprite.png");
 	width: 17px;
 	height: 17px;
+	display: inline-block;
+	background-position: left center;
+	background-repeat: none;
 }
 
 input[type='checkbox']:checked + label {
-	color: yellow;
+	background-position: -17px center;
+}
+
+input[type='checkbox']:checked + label + span {
+	text-decoration: line-through;
 }
 
 input[type='checkbox'] {

@@ -8,11 +8,12 @@ $(document).ready(function(){
 			alert('Please enter an item')
 		}
 		else {
-			$('.itemList ul').append("<li class='currentItem'><img class='Checked' src='images/checked.png'/>" + " " + content + " " + "<img src='images/delete.png'/ class='delete'></li>");
+			$('.itemList ul').append("<li class='currentItem'><input type='checkbox' id='box'><label for='box'></label><span>" + content + "</span><img class='delete' src='images/delete.png'/></li>");
 		}
 		$('#inputItems')[0].reset();
 	});
-	
+
+	$('.itemList ul').sortable();
 });
 
 assignlisteners();
@@ -21,7 +22,7 @@ function assignlisteners() {
 		console.log('trash clicked');
 		$(this).closest('li').remove();
 	});	
-	$('ul').on('click', '.Checked', function(event) {
+	$('ul').on('click', '#box', function(event) {
 		$(this).closest('li').toggleClass('strike');
 		console.log('check clicked');
 	});
